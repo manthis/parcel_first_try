@@ -1,5 +1,7 @@
 
 import { message } from './app';
+import './styles.scss';
 
-console.log(message);
+document.write(message);
+console.log('Ok app is now running...');
 
