@@ -1,20 +1,18 @@
 {
   "name": "parcel_first_try",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Small demo on how to use Parcel.js",
   "scripts": {
-    "start": "parcel index.html --open",
+    "start": "parcel index.html",
+    "open": "parcel index.html --open",
     "build": "parcel build"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Maxime AUBURTIN",
+  "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "parcel-bundler": "^1.9.3"
   },
-  "dependencies": {
-    "app": "^0.1.0"
-  }
+  "dependencies": {}
 }
