@@ -3,20 +3,25 @@
   "version": "1.0.0",
   "description": "Small demo on how to use Parcel.js",
   "scripts": {
-    "start": "parcel index.html",
-    "open": "parcel index.html --open",
-    "build": "parcel build"
+    "open": "parcel ./src/index.html --open",
+    "prestart": "rm -rf dist/",
+    "start": "parcel ./src/index.html",
+    "prebuild": "rm -rf dist/",
+    "build": "parcel build ./src/index.html --public-url ./"
   },
   "author": "Maxime AUBURTIN",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "eslint": "^5.0.1",
-    "jshint": "^2.9.5",
     "parcel-bundler": "^1.9.3"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "node-sass": "^4.9.1"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
